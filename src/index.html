@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Day10_query2</title>
-</head>
-<body>
-    
+    <style>
+      form input {
+        display: block;
+      }
+
+      #second{
+          padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="">
+        <label for="id">ID</label>
+        <input id="id" type="text" name="id" />
+        <label for="name">Name</label>
+        <input id="fname" type="text" name="name" />
+        <label for="price">Price</label>
+        <input id="price" type="text" name="price" />
+        <label for="quantity">Quantity</label>
+        <input id="quantity" type="text" name="quantity" />
+      </form>
+    </div>
 
 
+    <div id= "second">
+        <input id="addition" type="button" name="Button1 " value="Adddition">
+        <input id="delete" type="button" name="Button1 " value="Delete">
+        <input id="update" type="button" name="Button1 " value="Update">
+        <input id="display_table" type="button" name="Button1 " value="Display table">
 
+    </div>
 
+    <div id= "products_list"></div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
